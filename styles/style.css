@@ -37,13 +37,12 @@ nav{
 }
 
 .header{
-    background: red;
     height: 400px;
     display: flex;
     flex-direction: column;    
     justify-content: center;
     padding-left: 10%;
-    background-image: url(/assets/header-1.jpg);
+    background-image: url(assets/header-1.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
