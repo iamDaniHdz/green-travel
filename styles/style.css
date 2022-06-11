@@ -1,89 +1,89 @@
-:root{
+:root {
     --mainColor: #1B264F;
     --buttons: #8FD14F;
     --subTitle: #274690;
     --div: #25458e;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
-    
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* HEADER */
 
-header{
+header {
     background-color: var(--mainColor);
     display: flex;
     justify-content: space-between;
 }
 
-header img{
+header img {
     width: 25px;
     padding: 10px;
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
 }
 
-.header{
+.header {
     height: 400px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
     padding-left: 10%;
-    background-image: url(/assets/header-1.jpg);
+    background-image: url(../assets/header-1.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
 }
 
-h1{
+h1 {
     font-weight: 600px;
     font-size: 50px;
 }
 
-h2{
+h2 {
     font-weight: 600px;
     font-size: 30px;
 }
 
-h3{
+h3 {
     font-weight: 600px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-h4{
+h4 {
     font-weight: 600px;
     font-size: 20px;
 }
 
 /* About Us */
 
-.about{
+.about {
     display: flex;
     margin: 40px 10%;
     justify-content: space-evenly;
 
 }
 
-.about-img{
+.about-img {
     width: 30%;
     display: flex;
     justify-content: center;
 }
 
-.about-content{
+.about-content {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -93,17 +93,17 @@ h4{
     color: var(--mainColor);
 }
 
-.about-content p{
+.about-content p {
     font-weight: 300;
     color: var(--mainColor);
     padding: 20px;
 }
 
-.about img{
+.about img {
     width: 250px;
 }
 
-.about-content button{
+.about-content button {
     background-color: var(--mainColor);
     color: #fff;
     border-radius: 5px;
@@ -113,57 +113,94 @@ h4{
 
 /* Location */
 
-.location{
-    background: red;
+.location {
     margin: 0 10%;
 }
 
-.next-location{
-    display: flex;
-    width: 20%;
-    background: green;
+.location h2 {
+    color: #1B264F;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.location img{
-    width: 200px;
-    background: blue;
+.next-location {
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.location-card {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
+}
+
+.location-1 {
+    background-image: url(../assets/beach-1.jpg);
+}
+
+.location-2 {
+    background-image: url(../assets/beach-2.jpg);
+}
+
+.location-3 {
+    background-image: url(../assets/beach-3.jpg);
+}
+
+.location-4 {
+    background-image: url(../assets/beach-4.jpg);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--mainColor);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
 
 /******** DESTINO PAGE *********/
 
 /* SECTION: destino */
-.destino-section{
+.destino-section {
     margin: 20px 10%;
 }
 
-.destino{
+.destino {
     display: flex;
     justify-content: space-between;
 }
 
-.destino-title{
+.destino-title {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.destino-img{
+.destino-img {
     padding: 10px;
     width: 50%;
 }
 
-.destino-section img{
+.destino-section img {
     width: 100%;
 }
 
-.destino-location{
+.destino-location {
     margin: 8% 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.destino-location h3, .destino-location p{
+.destino-location h3,
+.destino-location p {
     padding: 10px 30px;
     text-align: center;
     font-weight: 300;
@@ -171,7 +208,7 @@ h4{
 }
 
 /* SECTION: actividades*/
-.actividad-section{
+.actividad-section {
     background: var(--subTitle);
     margin-right: 10%;
     margin-top: 100px;
@@ -180,7 +217,7 @@ h4{
     color: #fff;
 }
 
-.actividades{
+.actividades {
     padding: 20px;
     width: 50%;
     font-weight: 300;
@@ -189,75 +226,76 @@ h4{
     justify-content: center;
 }
 
-.actividades h3, .actividades p{
+.actividades h3,
+.actividades p {
     padding: 10px;
 }
 
-.actividades-img{
+.actividades-img {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.img-left{
+.img-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.actividad-section img{
+.actividad-section img {
     width: 200px;
     height: 100%;
 }
 
-.actividad{
+.actividad {
     width: 100%;
     padding: 10px;
 }
 
 /* SECTION: recomendaciones */
-.recomendaciones-section{
+.recomendaciones-section {
     margin: 100px 10% 0 10%;
 }
 
-.recomendaciones-section h3{
+.recomendaciones-section h3 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.recomendaciones-cards{
+.recomendaciones-cards {
     display: flex;
     padding: 10px;
-    
+
 }
 
-.recomendaciones-card{
+.recomendaciones-card {
     border: 2px solid var(--mainColor);
     padding: 10px;
     margin: 10px;
-    color:var(--mainColor);
+    color: var(--mainColor);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
 }
 
-.recomendaciones-section img{
+.recomendaciones-section img {
     width: 70%;
     padding: 20px 0px;
 }
 
-.recomendaciones-card p{
+.recomendaciones-card p {
     padding: 10px;
     text-align: center;
 }
 
 /* SECTION: fauna */
-.fauna-section{
+.fauna-section {
     margin: 100px 0px 30px 0px;
 }
 
-.fauna-title{
+.fauna-title {
     background: var(--subTitle);
     color: #fff;
     padding: 30px;
@@ -265,17 +303,17 @@ h4{
     text-align: center;
 }
 
-.fauna-section img{
+.fauna-section img {
     width: 70%;
 }
 
-.fauna-content{
+.fauna-content {
     margin: 0px 10%;
     display: flex;
     padding: 40px 0px;
 }
 
-.fauna-card{
+.fauna-card {
     width: 30%;
     height: 250px;
     display: flex;
@@ -287,31 +325,22 @@ h4{
     border-radius: 5px;
 }
 
-.fauna-btn{
+.fauna-btn {
     background: var(--buttons);
     padding: 10px 20px;
     border-radius: 5px;
     border-color: var(--buttons);
 }
 
-.fauna-card a{
+.fauna-card a {
     text-decoration: none;
     color: #fff;
 }
 
-/* FOOTER */
-
-/* Modificar el footer con el footer ya existente */
-footer{
-    background: var(--mainColor);
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-}
 
 /********* TURTLE PAGE ********/
 
-.animal-title{
+.animal-title {
     background: var(--subTitle);
     color: #fff;
     padding: 20px;
@@ -320,45 +349,45 @@ footer{
 }
 
 /* Slider de imagenes */
-.animal-content{
+.animal-content {
     display: flex;
     margin: 20px 10%;
 }
 
-.animal-text{
+.animal-text {
     width: 30%;
     display: flex;
     align-items: center;
     color: var(--mainColor);
 }
 
-.animal-img{
+.animal-img {
     margin: auto;
     width: 50%;
     padding: 30px;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 
-li{
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-ul.slider{
+ul.slider {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-ul.slider li{
-    position: absolute; 
+ul.slider li {
+    position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
@@ -367,31 +396,31 @@ ul.slider li{
     transition: opacity .5s;
 }
 
-ul.slider li img{
+ul.slider li img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-ul.slider li:first-child{
+ul.slider li:first-child {
     opacity: 1;
 }
 
-ul.slider li:target{
+ul.slider li:target {
     opacity: 1;
 }
 
-.menu{
+.menu {
     text-align: center;
     margin-top: 20px;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
     text-align: center;
 }
 
-.menu li a{
+.menu li a {
     display: inline-block;
     color: white;
     text-decoration: none;
